@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        app:met_floatingLabel="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:met_floatingLabel="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Me Logged In"
+        android:textColor="@color/colorPrimaryDark"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/find_id"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Find ID"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#00ff0000"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/find_pw"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="FIND PW"
+            android:gravity="center"
+            android:background="#00ff0000"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

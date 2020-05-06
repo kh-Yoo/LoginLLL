@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이메일을 입력하시고 인증번호를 확인하세요"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:met_floatingLabel="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="인증번호를 입력하세요"
+        app:met_floatingLabel="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/youremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당신의 이메일"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
